@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>交談式網銀</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/materialdesignicons.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+
+    <nav class="navbar header-nav">
+
+      <div class="header-info-wrap">
+        <a class="banking-bot" href="index.html">交談式網銀</a>
+        <div class="dropdown">
+          <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">IBS-Test</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">IBS-Test 1</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">IBS-Test 2</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">IBS-Test 3</a>
+          </div>
+        </div>
+        <a class="profile-setting" href="profile-config.html" data-toggle="tooltip" title="Profile設定"><i class="mdi mdi-settings"></i></a>
+      </div><!-- /.header-info-wrap -->
+
+      <div class="logout-wrap">
+        <a href="" class="username">username@mail.com</a>
+        <a href="" class="logout" data-toggle="tooltip" title="登出系統">
+          <i class="mdi mdi-power"></i>
+        </a>
+      </div><!-- /.logout-wrap -->
+
+    </nav><!-- /.header-nav -->
+    
+    <div class="page-body node">
+
+      <div class="sidebar">
+        <ul class="navigation-menu">
+          <li class="active">
+            <a href="node.html">
+              <i class="mdi mdi-share-variant"></i>
+              <span class="link-title">Node</span>
+            </a>
+          </li>
+          <li>
+            <a href="entity.html">
+              <i class="mdi mdi-message-text"></i>
+              <span class="link-title">Entity</span>
+            </a>
+          </li>
+           <li>
+             <a href="intend.html">
+              <i class="mdi mdi-flash"></i>
+               <span class="link-title">Intend</span>
+             </a>
+           </li>
+        </ul>
+      </div><!-- /.sidebar -->
+
+      <div class="page-content-wrapper">
+
+        <div class="page-content-header">
+          <div class="page-content-header-title">
+            Node
+          </div>
+          <div class="page-content-header-action">
+            <a href="node-add.html" class="btn header-action-btn" data-toggle="tooltip" title="新增"><i class="mdi mdi-plus"></i></a>
+          </div>
+        </div><!-- /.page-content-header -->
+
+        <div class="page-content-wrapper-inner">
+          
+          <div class="accordion nodeAccordion" id="nodeAccordion">
+            <div class="card">
+              <div class="card-header" id="heading1">
+                <div class="nodeAccordion-title">
+                  <a class="btn" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                    <i class="mdi mdi-chevron-right"></i> 
+                  </a>
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                    Todo:
+                  </button>
+                </div>
+                <div class="accordion-action">
+                  <a href="" class="btn-in-list"><i class="mdi mdi-plus"></i></a>
+                  <a href="" class="btn-in-list"><i class="mdi mdi-delete"></i></a>
+                </div>
+                
+              </div>
+
+              <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#nodeAccordion">
+                <div class="card-body">
+                  <!-- 第二層 -->
+                  <div class="accordion nodeAccordion" id="nodeAccordionSub1">
+                    <div class="card">
+                      <div class="card-header" id="heading1-1">
+                        <div class="nodeAccordion-title">
+                          <a class="btn" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                            <i class="mdi mdi-chevron-right"></i> 
+                          </a>
+                          <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1-1" aria-expanded="false" aria-controls="collapse1-1">
+                            1. 層級請用程式控制
+                          </button>
+                        </div>
+                        <div class="accordion-action">
+                          <a href="" class="btn-in-list"><i class="mdi mdi-plus"></i></a>
+                          <a href="" class="btn-in-list"><i class="mdi mdi-delete"></i></a>
+                        </div>
+                      </div>
+
+                      <div id="collapse1-1" class="collapse" aria-labelledby="heading1-1" data-parent="#nodeAccordionSub1">
+                        <div class="card-body">
+                           <!-- 第三層 -->
+                          <div class="accordion nodeAccordion" id="">
+                            <div class="card">
+                              <div class="card-header" id="">
+                                <div class="nodeAccordion-title">
+                                  <a class="btn" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                    <i class="mdi mdi-chevron-right"></i> 
+                                  </a>
+                                  <button class="btn btn-link">
+                                    第三層
+                                  </button>
+                                </div>
+                                <div class="accordion-action">
+                                  <a href="" class="btn-in-list"><i class="mdi mdi-plus"></i></a>
+                                  <a href="" class="btn-in-list"><i class="mdi mdi-delete"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- 第三層 end --> 
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="heading2-1">
+                        <div class="nodeAccordion-title">
+                          <a class="btn" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                            <i class="mdi mdi-chevron-right"></i> 
+                          </a>
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse2-1" aria-expanded="false" aria-controls="collapse2-1">
+                            2. 前方的 icon 設定旋轉角度 (開:箭頭朝上 / 關: 箭頭朝下 / 最底層: L型 icon)
+                          </button>
+                        </div>
+                        <div class="accordion-action">
+                          <a href="" class="btn-in-list"><i class="mdi mdi-plus"></i></a>
+                          <a href="" class="btn-in-list"><i class="mdi mdi-delete"></i></a>
+                        </div>
+                      </div>
+                      <div id="collapse2-1" class="collapse" aria-labelledby="heading2-1" data-parent="#nodeAccordionSub1">
+                        <div class="card-body">
+                           <!-- 第三層 -->
+                          <div class="accordion nodeAccordion" id="">
+                            <div class="card">
+                              <div class="card-header" id="">
+                                <div class="nodeAccordion-title">
+                                  <a class="btn" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                    <i class="mdi mdi-chevron-right"></i> 
+                                  </a>
+                                  <button class="btn btn-link">
+                                    第三層
+                                  </button>
+                                </div>
+                                <div class="accordion-action">
+                                  <a href="" class="btn-in-list"><i class="mdi mdi-plus"></i></a>
+                                  <a href="" class="btn-in-list"><i class="mdi mdi-delete"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- 第三層 end -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 第二層 end -->
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="heading2">
+                <div class="nodeAccordion-title">
+                  <a class="btn" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                    <i class="mdi mdi-chevron-right"></i> 
+                  </a>
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                    目錄二
+                  </button>
+                </div>
+                <div class="accordion-action">
+                  <a href="" class="btn-in-list"><i class="mdi mdi-plus"></i></a>
+                  <a href="" class="btn-in-list"><i class="mdi mdi-delete"></i></a>
+                </div>
+              </div>
+              <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#nodeAccordion">
+                <div class="card-body">
+                  <!-- 第二層 -->
+                  <div class="accordion nodeAccordion" id="">
+                    <div class="card">
+                      <div class="card-header" id="">
+                        <div class="nodeAccordion-title">
+                          <a class="btn" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                            <i class="mdi mdi-chevron-right"></i> 
+                          </a>
+                          <button class="btn btn-link">
+                            第二層
+                          </button>
+                        </div>
+                        <div class="accordion-action">
+                          <a href="" class="btn-in-list"><i class="mdi mdi-plus"></i></a>
+                          <a href="" class="btn-in-list"><i class="mdi mdi-delete"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 第二層 end -->
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="heading3">
+                <div class="nodeAccordion-title">
+                  <a class="btn" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                    <i class="mdi mdi-chevron-right"></i> 
+                  </a>
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                    目錄三
+                  </button>
+                </div>
+                <div class="accordion-action">
+                  <a href="" class="btn-in-list"><i class="mdi mdi-plus"></i></a>
+                  <a href="" class="btn-in-list"><i class="mdi mdi-delete"></i></a>
+                </div>
+              </div>
+              <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#nodeAccordion">
+                <div class="card-body">
+                  <!-- 第二層 -->
+                  <div class="accordion nodeAccordion" id="">
+                    <div class="card">
+                      <div class="card-header" id="">
+                        <div class="nodeAccordion-title">
+                          <a class="btn" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                            <i class="mdi mdi-chevron-right"></i> 
+                          </a>
+                          <button class="btn btn-link">
+                            第二層
+                          </button>
+                        </div>
+                        <div class="accordion-action">
+                          <a href="" class="btn-in-list"><i class="mdi mdi-plus"></i></a>
+                          <a href="" class="btn-in-list"><i class="mdi mdi-delete"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 第二層 end -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /.page-content-wrapper-inner -->
+
+      </div><!-- /.page-content-wrapper -->
+
+      <div class="chat-wrapper">
+        <!-- <iframe src="http://www.ibm.com" frameborder="0"></iframe> -->
+      </div><!-- /.chat-wrapper -->
+
+    </div><!-- /.page-body -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+  </body>
+</html>

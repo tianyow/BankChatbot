@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>交談式網銀</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/materialdesignicons.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+
+    <nav class="navbar header-nav">
+
+      <div class="header-info-wrap">
+        <a class="banking-bot" href="index.html">交談式網銀</a>
+        <div class="dropdown">
+          <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">IBS-Test</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">IBS-Test 1</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">IBS-Test 2</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">IBS-Test 3</a>
+          </div>
+        </div>
+        <a class="profile-setting" href="profile-config.html" data-toggle="tooltip" title="Profile設定"><i class="mdi mdi-settings"></i></a>
+      </div><!-- /.header-info-wrap -->
+
+      <div class="logout-wrap">
+        <a href="" class="username">username@mail.com</a>
+        <a href="" class="logout" data-toggle="tooltip" title="登出系統">
+          <i class="mdi mdi-power"></i>
+        </a>
+      </div><!-- /.logout-wrap -->
+
+    </nav><!-- /.header-nav -->
+    
+    <div class="page-body node">
+
+      <div class="sidebar">
+        <ul class="navigation-menu">
+          <li class="active">
+            <a href="node.html">
+              <i class="mdi mdi-share-variant"></i>
+              <span class="link-title">Node</span>
+            </a>
+          </li>
+          <li>
+            <a href="entity.html">
+              <i class="mdi mdi-message-text"></i>
+              <span class="link-title">Entity</span>
+            </a>
+          </li>
+           <li>
+             <a href="intend.html">
+              <i class="mdi mdi-flash"></i>
+               <span class="link-title">Intend</span>
+             </a>
+           </li>
+        </ul>
+      </div><!-- /.sidebar -->
+
+      <div class="page-content-wrapper">
+
+        <div class="page-content-header">
+          <div class="page-content-header-title">
+            <input type="text" value="Node 名稱">
+          </div>
+          <div class="page-content-header-action">
+            <a href="node.html" class="btn header-action-btn"><i class="mdi mdi-check-bold"></i> 儲存</a>
+          </div>
+        </div><!-- /.page-content-header -->
+
+        <div class="page-content-wrapper-inner">
+          
+          <h2><i class="mdi mdi-arrow-decision"></i> Conditions</h2>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">#</span>
+            </div>
+            <input type="text" class="form-control" placeholder="accountFunction">
+          </div>
+          <hr>
+
+          <h2><i class="mdi mdi-message-reply-text"></i> Responses</h2>
+          <div class="card card-extend-group mb-4">
+            <div class="card-body">
+              <div class="input-group mb-3">
+                <select class="form-control" id="">
+                  <option selected>TEXT</option>
+                  <option value="1">OPTION</option>
+                </select>
+              </div>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="顯示帳戶相關功能">
+              </div>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="帳戶功能有">
+              </div>
+            </div>
+            <div class="card-footer text-right">
+              <a href="#" class="btn btn-add-item"><i class="mdi mdi-playlist-plus"></i></a>
+            </div>
+          </div><!-- /.card-extend-group -->
+
+          <div class="card card-extend-group mb-4">
+            <div class="card-body">
+              <div class="input-group mb-3">
+                <select class="form-control" id="">
+                  <option>TEXT</option>
+                  <option value="1" selected>OPTION</option>
+                </select>
+              </div>
+              <div class="form-group row">
+                <label for="optionTitle" class="col-sm-2 col-form-label">Title</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="optionTitle">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="optionDescription" class="col-sm-2 col-form-label">Description</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="optionDescription">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col"><small>Type</small></div>
+                <div class="col"><small>Label</small></div>
+                <div class="col-5"><small>Value</small></div>
+              </div>
+              <div class="form-row">
+                <div class="col">
+                  <select name="" id="" class="form-control">
+                    <option value="">Text</option>
+                    <option value="">Option</option>
+                    <option value="">URL</option>
+                  </select>
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="">
+                </div>
+                <div class="col-5">
+                  <input type="text" class="form-control" placeholder="">
+                </div>
+              </div>
+            </div>
+            <div class="card-footer text-right">
+              <a href="#" class="btn btn-add-item"><i class="mdi mdi-playlist-plus"></i></a>
+            </div>
+          </div><!-- /.card-extend-group -->
+
+          <div class="add-group-row">
+            <button class="btn btn-add-group"><i class="mdi mdi-plus"></i></button>
+          </div><!-- /.add-group-row -->
+
+          <hr>
+
+          <h2><i class="mdi mdi-help-box"></i> Questions</h2>
+          <table class="table table-sm table-borderless table-node-question">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Output</th>
+                <th>Condition</th>
+                <th>Context</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input class="form-control" type="text"></td>
+                <td><input class="form-control" type="text"></td>
+                <td><input class="form-control" type="text"></td>
+                <td><input class="form-control" type="text"></td>
+                <td><a href="" class="node-question-row-edit" data-toggle="modal" data-target="#questionDetailModal"><i class="mdi mdi-square-edit-outline"></i></a></td>
+              </tr>
+              <tr>
+                <td><input class="form-control" type="text"></td>
+                <td><input class="form-control" type="text"></td>
+                <td><input class="form-control" type="text"></td>
+                <td><input class="form-control" type="text"></td>
+                <td><a href="" class="node-question-row-edit" data-toggle="modal" data-target="#questionDetailModal"><i class="mdi mdi-square-edit-outline"></i></a></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="add-group-row">
+            <button class="btn btn-add-group"><i class="mdi mdi-plus"></i></button>
+          </div><!-- /.add-group-row -->
+
+          <hr>
+
+          <h2><i class="mdi mdi-orbit"></i> API URL</h2>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="exp. http://www.pershing.com.tw">
+          </div>
+
+        </div><!-- /.page-content-wrapper-inner -->
+
+      </div><!-- /.page-content-wrapper -->
+
+      <div class="chat-wrapper">
+        <!-- <iframe src="http://www.ibm.com" frameborder="0"></iframe> -->
+      </div><!-- /.chat-wrapper -->
+
+    </div><!-- /.page-body -->
+
+    <!-- Modal: Question Details -->
+    <div class="modal fade" id="questionDetailModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+
+            <div class="card">
+              <div class="card-header">Questions</div>
+              <div class="card-body">
+                <div class="form-group row">
+                  <label for="qDetailTitle" class="col-sm-2 col-form-label">Title</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="qDetailTitle">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="qDetailOutput" class="col-sm-2 col-form-label">Output</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="qDetailOutput">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="qDetailCondition" class="col-sm-2 col-form-label">Condition</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="qDetailCondition">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="qDetailContext" class="col-sm-2 col-form-label">Context</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="qDetailContext">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="qDetailOptionUrl" class="col-sm-2 col-form-label">Option URL</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="qDetailOptionUrl">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">Default Option</div>
+              <div class="card-body">
+                <div class="form-row">
+                  <div class="col"><small>Label</small></div>
+                  <div class="col"><small>Value</small></div>
+                  <div class="col-1"></div>
+                </div>
+                <div class="form-row mb-2">
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="">
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="">
+                  </div>
+                  <div class="col-1 text-center">
+                    <a href="" class="btn btn-inrow-delete"><i class="mdi mdi-close-box"></i></a>
+                  </div>
+                </div>
+                <div class="form-row mb-2">
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="">
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="">
+                  </div>
+                  <div class="col-1 text-center">
+                    <a href="" class="btn btn-inrow-delete"><i class="mdi mdi-close-box"></i></a>
+                  </div>
+                </div>
+                <div class="form-row mb-2">
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="">
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="">
+                  </div>
+                  <div class="col-1 text-center">
+                    <a href="" class="btn btn-inrow-delete"><i class="mdi mdi-close-box"></i></a>
+                  </div>
+                </div>
+                <div class="add-group-row">
+                  <button class="btn btn-add-group"><i class="mdi mdi-plus"></i></button>
+                </div><!-- /.add-group-row -->
+              </div>
+            </div>
+
+          </div><!-- /.modal-body -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-lg btn-ok"><i class="mdi mdi-check-bold"></i> 儲存</button>
+            <button type="button" class="btn btn-link" data-dismiss="modal">取消</button>
+          </div><!-- /.modal-footer -->
+        </div>
+      </div>
+    </div>
+    <!-- Modal: Question Details end --> 
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+  </body>
+</html>

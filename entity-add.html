@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>交談式網銀</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/materialdesignicons.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+
+    <nav class="navbar header-nav">
+
+      <div class="header-info-wrap">
+        <a class="banking-bot" href="index.html">交談式網銀</a>
+        <div class="dropdown">
+          <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">IBS-Test</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">IBS-Test 1</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">IBS-Test 2</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">IBS-Test 3</a>
+          </div>
+        </div>
+        <a class="profile-setting" href="profile-config.html" data-toggle="tooltip" title="Profile設定"><i class="mdi mdi-settings"></i></a>
+      </div><!-- /.header-info-wrap -->
+
+      <div class="logout-wrap">
+        <a href="" class="username">username@mail.com</a>
+        <a href="" class="logout" data-toggle="tooltip" title="登出系統">
+          <i class="mdi mdi-power"></i>
+        </a>
+      </div><!-- /.logout-wrap -->
+
+    </nav><!-- /.header-nav -->
+    
+    <div class="page-body entity">
+
+      <div class="sidebar">
+        <ul class="navigation-menu">
+          <li>
+            <a href="node.html">
+              <i class="mdi mdi-share-variant"></i>
+              <span class="link-title">Node</span>
+            </a>
+          </li>
+          <li class="active">
+            <a href="entity.html">
+              <i class="mdi mdi-message-text"></i>
+              <span class="link-title">Entity</span>
+            </a>
+          </li>
+           <li>
+             <a href="intend.html">
+              <i class="mdi mdi-flash"></i>
+               <span class="link-title">Intend</span>
+             </a>
+           </li>
+        </ul>
+      </div><!-- /.sidebar -->
+
+      <div class="page-content-wrapper">
+
+        <div class="page-content-header">
+          <div class="page-content-header-title">
+            <input type="text" value="銀行代碼">
+          </div>
+          <div class="page-content-header-action">
+            <a href="entity.html" class="btn header-action-btn"><i class="mdi mdi-check-bold"></i> 儲存</a>
+          </div>
+        </div><!-- /.page-content-header -->
+
+        <div class="page-content-wrapper-inner">
+
+          <h2><i class="mdi mdi-format-list-bulleted-type"></i> Description</h2>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="內容文字">
+          </div>
+          <hr>
+
+          <div class="accordion entityAccordion mb-3" id="entityAccordion">
+            <div class="card">
+              <div class="card-header" id="heading1">
+                <div class="entity-items">
+                  <div class="entity-item-name"><a href="#" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">銀行編號</a></div>
+                  <div class="entity-item-type">Synonym</div>
+                  <div class="entity-item-badge">
+                    <div class="entity-item-badge-outer">
+                      <div class="entity-item-badge-inner">
+                        <span class="badge badge-pill">001</span>
+                        <span class="badge badge-pill">002</span>
+                        <span class="badge badge-pill">003</span>
+                        <span class="badge badge-pill">004</span>
+                        <span class="badge badge-pill">005</span>
+                        <span class="badge badge-pill">006</span>
+                        <span class="badge badge-pill">007</span>
+                        <span class="badge badge-pill">008</span>
+                        <span class="badge badge-pill">009</span>
+                        <span class="badge badge-pill">010</span>
+                        <span class="badge badge-pill">011</span>
+                        <span class="badge badge-pill">012</span>
+                        <span class="badge badge-pill">013</span>
+                        <span class="badge badge-pill">014</span>
+                        <span class="badge badge-pill">015</span>
+                        <span class="badge badge-pill">016</span>
+                        <span class="badge badge-pill">017</span>
+                        <span class="badge badge-pill">018</span>
+                        <span class="badge badge-pill">019</span>
+                        <span class="badge badge-pill">020</span>
+                      </div>
+                    </div>
+                  </div><!-- /.entity-item-badge -->
+                </div><!-- /.entity-items -->
+                <div class="accordion-action">
+                  <a href="#" class="btn-in-list" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1"><i class="mdi mdi-playlist-edit"></i></a>
+                  <a href="#" class="btn-in-list"><i class="mdi mdi-delete"></i></a>
+                </div>
+              </div>
+
+              <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#entityAccordion">
+                <div class="card-body">
+                  <div class="card card-extend-group mb-2">
+                    <div class="card-body">
+                      <div class="form-group mb-3">
+                        <input type="text" class="form-control" value="銀行編號">
+                      </div>
+                      <div class="input-group mb-3">
+                        <select class="form-control col-3" id="">
+                          <option selected>Synonym</option>
+                          <option value="1">Pattern</option>
+                        </select>
+                      </div>
+                      <div class="form-row">
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="001">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="002">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="001">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="002">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="001">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="002">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="001">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="002">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="001">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="002">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer text-right">
+                      <a href="#" class="btn btn-add-item"><i class="mdi mdi-playlist-plus"></i></a>
+                    </div>
+                  </div><!-- /.card-extend-group -->
+                  <div class="add-group-row">
+                    <button class="btn btn-add-group"><i class="mdi mdi-plus"></i></button>
+                  </div><!-- /.add-group-row -->
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="heading2">
+                <div class="entity-items">
+                  <div class="entity-item-name"><a href="#" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">銀行編號</a></div>
+                  <div class="entity-item-type">Pattern</div>
+                  <div class="entity-item-badge">
+                    <div class="entity-item-badge-outer">
+                      <div class="entity-item-badge-inner">
+                        <span class="badge badge-pill">001</span>
+                        <span class="badge badge-pill">002</span>
+                        <span class="badge badge-pill">003</span>
+                        <span class="badge badge-pill">004</span>
+                        <span class="badge badge-pill">005</span>
+                        <span class="badge badge-pill">006</span>
+                        <span class="badge badge-pill">007</span>
+                        <span class="badge badge-pill">008</span>
+                        <span class="badge badge-pill">009</span>
+                        <span class="badge badge-pill">010</span>
+                      </div>
+                    </div>
+                  </div><!-- /.entity-item-badge -->
+                </div><!-- /.entity-items -->
+                <div class="accordion-action">
+                  <a href="#" class="btn-in-list" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2"><i class="mdi mdi-playlist-edit"></i></a>
+                  <a href="#" class="btn-in-list"><i class="mdi mdi-delete"></i></a>
+                </div>
+              </div>
+              <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#entityAccordion">
+                <div class="card-body">
+                  <div class="card card-extend-group mb-2">
+                    <div class="card-body">
+                      <div class="form-group mb-3">
+                        <input type="text" class="form-control" value="銀行編號">
+                      </div>
+                      <div class="input-group mb-3">
+                        <select class="form-control col-3" id="">
+                          <option>Synonym</option>
+                          <option value="1" selected>Pattern</option>
+                        </select>
+                      </div>
+                      <div class="form-row">
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="001">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="002">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="001">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="002">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="001">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="002">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="001">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="002">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="001">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="002">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer text-right">
+                      <a href="#" class="btn btn-add-item"><i class="mdi mdi-playlist-plus"></i></a>
+                    </div>
+                  </div><!-- /.card-extend-group -->
+                  <div class="add-group-row">
+                    <button class="btn btn-add-group"><i class="mdi mdi-plus"></i></button>
+                  </div><!-- /.add-group-row -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <button type="button" class="btn btn-danger"><i class="mdi mdi-delete-sweep"></i> 刪除全部</button>
+            </div>
+          </div>
+          
+
+        </div><!-- /.page-content-wrapper-inner -->
+
+      </div><!-- /.page-content-wrapper -->
+
+      <div class="chat-wrapper">
+        <!-- <iframe src="http://www.ibm.com" frameborder="0"></iframe> -->
+      </div><!-- /.chat-wrapper -->
+
+    </div><!-- /.page-body -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+  </body>
+</html>
