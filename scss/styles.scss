@@ -38,6 +38,7 @@ body {
 		background: lighten($base-color-dark, 10%);
 		padding: 10px;
 		min-width: 200px;
+		height: $header-height;
 		& > .btn {
 			color: #eee;
 			text-align: left;
@@ -152,10 +153,11 @@ ul.navigation-menu {
 		}
 		&.active {
 			a {
-				color: gold;
-				i {
-					color: gold;
-				}
+				background: linear-gradient(45deg, rgba(0,0,0,.3), rgba(0,0,0,.5));
+				// color: gold;
+				// i {
+				// 	color: gold;
+				// }
 			}
 		}
 	}
@@ -175,7 +177,8 @@ ul.navigation-menu {
 	overflow-y: auto;
 	h2 {
 		color: $base-color-dark;
-		font-size: 1.3rem;
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
 	}
 }
 .page-content-header {
